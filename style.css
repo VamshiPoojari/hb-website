@@ -331,7 +331,8 @@ nav ul li a:hover::after{
     position: relative;
     max-width: 1100px;
     margin: auto;
-    overflow: hidden;           /* 🔒 prevents slide bleed */
+    overflow: hidden;    
+    min-height: 420px;    
 }
 
 
@@ -341,7 +342,7 @@ nav ul li a:hover::after{
     transition: transform 0.6s ease;
 }
 
-.stats-slide {
+.stats-slide{
     min-width: 100%;
     flex-shrink: 0;
     text-align: center;
@@ -425,6 +426,17 @@ nav ul li a:hover::after{
     touch-action: pan-y;
 }
 
+@media (max-width: 600px){
+    .stats-wrapper{
+        min-height: 340px;
+    }
+
+    .stats-arrow{
+        width: 34px;
+        height: 34px;
+        font-size: 18px;
+    }
+}
 
 .stats-slide h1{
     font-size: 80px;
@@ -461,19 +473,17 @@ nav ul li a:hover::after{
     list-style: none;
 }
 
-/* Arrows */
 .stats-arrow{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #262626;
-    color: #fff;
+    background: none;          /* ❌ no circle */
     border: none;
-    font-size: 22px;
+    color: #ffffff;
+    font-size: 26px;
     cursor: pointer;
+    z-index: 20;
+    padding: 0;
 }
 
 .stats-arrow.left{
@@ -482,10 +492,6 @@ nav ul li a:hover::after{
 
 .stats-arrow.right{
     right : 10px;
-}
-
-.stats-arrow:hover{
-    background: rgba(255,255,255,0.3);
 }
 
 @media (max-width: 900px){
@@ -506,17 +512,6 @@ nav ul li a:hover::after{
     }
 }
 
-@media (hover: none){
-    .stats-arrow{
-        background: rgba(0,0,0,0.6);
-        border-radius: 50%;
-    }
-
-    .stats-arrow:active{
-        transform: scale(0.9);
-    }
-}
-
 /* Mobile */
 @media(max-width: 768px){
     .stats-arrow.left{ left: 10px; }
@@ -529,7 +524,7 @@ nav ul li a:hover::after{
 /* ===== HIGHLIGHTS SLIDE ONLY ===== */
 
 .highlights-slide{
-    height: 350px;
+    min-height: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;          /* same horizontal alignment */
@@ -1410,6 +1405,3 @@ nav .fa-solid{
     padding: 12px 14px;
     border-radius: 6px;
 }
-
-
-
