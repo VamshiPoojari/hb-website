@@ -769,7 +769,7 @@ nav ul li a:hover::after{
 }
 
 .mess{
-    background-image: url(images/facilities/mess.png);
+    background-image: url(images/facilities/mess.jpg);
 }
 
 .canteen{
@@ -785,7 +785,7 @@ nav ul li a:hover::after{
 }
 
 .stationery{
-    background-image: url(images/facilities/stationery.png);
+    background-image: url(images/facilities/stationery.jpg);
 }
 
 .juice{
@@ -796,11 +796,11 @@ nav ul li a:hover::after{
 }
 
 .visitors{
-    background-image: url(images/facilities/visitors.png);
+    background-image: url(images/facilities/visitors.jpeg);
 }
 
 .guest{
-    background-image: url(images/facilities/guest.png);
+    background-image: url(images/facilities/guest.jpg);
 }
 
 .learn-more summary{
