@@ -1405,3 +1405,164 @@ nav .fa-solid{
     padding: 12px 14px;
     border-radius: 6px;
 }
+
+/* ===== SECURITY SECTION ===== */
+#security{
+    padding: 80px 0;
+    background: #f8f8f8;
+}
+
+.section-intro{
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 700px;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px){
+    .section-intro{
+        font-size: 15px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.security-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+@media (max-width: 900px){
+    .security-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .security-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.security-card{
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.security-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.security-card i{
+    font-size: 48px;
+    color: #d27c3a;
+    margin-bottom: 20px;
+}
+
+.security-card h3{
+    font-size: 20px;
+    color: #262626;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.security-card p{
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ===== HEALTH & FITNESS SECTION ===== */
+#health-fitness{
+    padding: 80px 0;
+    background: #262626;
+}
+
+#health-fitness .sub-title{
+    color: #fff;
+}
+
+#health-fitness .section-intro{
+    color: #ccc;
+}
+
+.fitness-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+@media (max-width: 1100px){
+    .fitness-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .fitness-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.fitness-card{
+    background: #333;
+    padding: 40px 25px;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border: 1px solid #444;
+}
+
+.fitness-card:hover{
+    transform: translateY(-6px);
+    background: #3a3a3a;
+    border-color: #d27c3a;
+}
+
+.fitness-card i{
+    font-size: 44px;
+    color: #fda800;
+    margin-bottom: 20px;
+}
+
+.fitness-card h3{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.fitness-card p{
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.7;
+}
+
+/* ===== BOOKING LINK BUTTON ===== */
+.booking-link-btn{
+    display: inline-block;
+    background: #d27c3a;
+    color: #fff !important;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.booking-link-btn:hover{
+    background: #fda800;
+    transform: translateY(-2px);
+}
